@@ -1,0 +1,12 @@
+**/bin/
+**/obj/
+**/node_modules/
+**/.next/
+.e2e/
+artifacts/packages/
+artifacts/
+BenchmarkDotNet.Artifacts/
+**/TestResults/
+.codex
+
+Agents

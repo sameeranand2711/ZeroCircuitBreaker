@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <Deterministic>true</Deterministic>
+    <ContinuousIntegrationBuild>true</ContinuousIntegrationBuild>
+
+    <PackageId>ZeroCircuitBreaker</PackageId>
+    <Title>ZeroCircuitBreaker</Title>
+    <Description>A lightweight, thread-safe .NET circuit breaker with lock-free, generation-aware state transitions and zero third-party runtime dependencies.</Description>
+    <PackageTags>circuit-breaker;resilience;fault-tolerance;dotnet;valuetask</PackageTags>
+    <PackageVersion>1.0.0-rc.1</PackageVersion>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <RepositoryType>git</RepositoryType>
+    <RepositoryUrl>https://github.com/sameeranand2711/ZeroCircuitBreaker</RepositoryUrl>
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include='../../README.md' Pack='true' PackagePath='/' />
+  </ItemGroup>
+
+</Project>
