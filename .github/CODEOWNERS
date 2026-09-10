@@ -1,0 +1,14 @@
+# Catch-all: Set yourself as the default owner for everything
+*       @sameeranand2711
+
+# .NET Backend specifics (Optional: if you want explicit rules)
+# *.csproj @your-username
+# *.sln    @your-username
+# /src/Backend/ @your-username
+
+# React Frontend specifics (Optional)
+# package.json  @your-username
+# /src/Frontend/ @your-username
+
+# GIT specifics
+/.github/CODEOWNERS          @admin-username-or-team
