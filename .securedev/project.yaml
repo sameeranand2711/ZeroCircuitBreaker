@@ -1,0 +1,50 @@
+schema_version: 1
+project:
+  name: ZeroCircuitBreaker
+  type: dotnet-library
+  maturity: PRERELEASE
+  default_branch: main
+  validation_profile: STANDARD
+  trust_mode: TRUSTED_LOCAL
+architecture:
+  contract_path: docs/internal/architecture.md
+risk:
+  security: MEDIUM
+  privacy: LOW
+  regulatory: LOW
+  financial_correctness: MEDIUM
+  persistence_data_loss: LOW
+  concurrency: CRITICAL
+  performance: HIGH
+  availability: HIGH
+  distributed_failure: HIGH
+  compatibility: HIGH
+  operational: MEDIUM
+samples:
+  required: true
+  paths:
+    - samples/BasicUsage
+    - samples/HighPerformanceUsage
+    - samples/HttpClientUsage
+components:
+  - id: core
+    root: src/ZeroCircuitBreaker
+    type: dotnet-library
+  - id: unit-tests
+    root: tests/ZeroCircuitBreaker.Tests
+    type: dotnet-tests
+  - id: concurrency-tests
+    root: tests/ZeroCircuitBreaker.ConcurrencyTests
+    type: dotnet-tests
+  - id: benchmarks
+    root: benchmarks/ZeroCircuitBreaker.Benchmarks
+    type: dotnet-benchmarks
+  - id: sample-basic
+    root: samples/BasicUsage
+    type: dotnet-sample
+  - id: sample-performance
+    root: samples/HighPerformanceUsage
+    type: dotnet-sample
+  - id: sample-http
+    root: samples/HttpClientUsage
+    type: dotnet-sample
